@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bridge the Gap</title>
+  <meta name="description" content="Hold to stretch a bridge, release to lay it down and cross from building to building.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <canvas id="stage" aria-label="Bridge the Gap game area"></canvas>
+
+    <header id="hud">
+      <div class="hud-title" id="title">Bridge the Gap</div>
+      <div class="hud-scores">
+        <span id="best-board">Best: <b id="best">0</b></span>
+        <span class="hud-sep">|</span>
+        <span>Score: <b id="score">0</b></span>
+      </div>
+      <button id="sound" type="button" aria-label="Mute sound" title="Sound on/off (M)">
+        <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9v6h4l5 5V4l-5 5H7z"/><path d="M18.3 9.3l1.4 1.4-1.3 1.3 1.3 1.3-1.4 1.4-1.3-1.3-1.3 1.3-1.4-1.4 1.3-1.3-1.3-1.3 1.4-1.4 1.3 1.3z"/></svg>
+      </button>
+    </header>
+
+    <div id="overlay">
+      <div id="reversed" class="hidden">REVERSED</div>
+      <div id="bonus" class="hidden">BONUS +1</div>
+      <div id="intro">
+        <div class="intro-1">Press and hold to stretch the bridge</div>
+        <div class="intro-2">Release to lay it across the gap</div>
+      </div>
+      <div id="game-over" class="hidden">
+        <div class="go-title">GAME OVER</div>
+        <div class="go-score">Score <b id="go-score">0</b> &middot; Best <b id="go-best">0</b></div>
+        <div class="go-new hidden" id="go-new">New best!</div>
+        <button id="restart" type="button">RESTART</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="sfx.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

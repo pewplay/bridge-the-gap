@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
+  "title": "Bridge the Gap",
+  "description": "Hold to stretch a bridge, release to drop it across the gap and hop between rooftops in this free one-touch timing game in your browser.",
+  "about": "Bridge the Gap is a minimalist one-button timing game. You stand on the edge of a building with open water below, and the next rooftop waits somewhere across the gap. Press and hold to grow a bridge straight up, then let go so it tips over and lands flat. If its far end rests on the next building, you walk across and score a point.\n\nThe fun is in judging distance by eye: the bridge grows fast, gaps and rooftops change size every round, and a tiny red marker sits in the middle of each target. Drop the bridge exactly on that marker for a bonus point. Every so often the city flips into REVERSED mode, and you have to build from right to left, which is surprisingly good at breaking your rhythm.\n\nOriginally created by Varun Malhotra for js13kGames 2015.",
+  "howToPlay": "Press and hold to grow the bridge upward, then release to lay it down toward the next building. If the end of the bridge lands on the rooftop you earn a point and move on; landing on the red mid-point marker earns an extra bonus point. A bridge that is too short or too long falls into the water and ends the game. In REVERSED mode the next building is on the left, so the bridge tips over to the left.",
+  "controls": [
+    { "input": "Mouse (hold and release)", "action": "Grow the bridge, then lay it down" },
+    { "input": "Touch (hold and release)", "action": "Grow the bridge, then lay it down" },
+    { "input": "Space / Enter (hold)", "action": "Grow the bridge; release to lay it down" },
+    { "input": "Enter / R", "action": "Restart after game over" },
+    { "input": "M", "action": "Mute or unmute sound" }
+  ],
+  "tips": [
+    "Compare the growing bridge with the distance to the far edge of the next roof, not the near one: you have the whole rooftop as a landing zone.",
+    "Aim for the red marker on wide buildings, where the bonus point is easy and the landing is still safe.",
+    "Narrow rooftops leave almost no margin, so aim for their centre instead of trying to just clear the gap.",
+    "When REVERSED appears, take a breath before pressing: the bridge now tips to the left."
+  ],
+  "faq": [
+    {
+      "question": "Is Bridge the Gap free to play?",
+      "answer": "Yes, it is completely free and runs right in your browser with no download or sign-up."
+    },
+    {
+      "question": "Can I play Bridge the Gap on my phone or tablet?",
+      "answer": "Yes. It is a one-touch game: press and hold anywhere on the screen, then lift your finger. It works in portrait and landscape."
+    },
+    {
+      "question": "How do I get bonus points?",
+      "answer": "Land the end of the bridge exactly on the small red marker in the middle of the next building to score two points instead of one."
+    }
+  ],
+  "category": "Arcade",
+  "tags": ["one-button", "timing", "bridge", "casual", "minimalist", "high-score"],
+  "author": "Varun Malhotra",
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "screenshots": ["screenshots/1.png", "screenshots/2.png", "screenshots/3.png"],
+  "added": "2026-09-28",
+  "draft": false
+}
